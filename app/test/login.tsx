@@ -8,7 +8,7 @@ export default function Login() {
     return (
       <>
         <p>Welcome {session?.user?.name}</p>
-        <button onClick={() => signOut()}>Logout</button>
+        <button className="p-1 w-40 bg-blue-400 hover:cursor-pointer" onClick={() => signOut()}>Logout</button>
       </>
     )
   }
