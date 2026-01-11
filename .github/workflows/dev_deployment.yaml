@@ -47,6 +47,7 @@ jobs:
           host: 210.79.129.231
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SERVER_SSH_PASSPHRASE }}
           script: |
             # docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p {{ secrets.DOCKERHUB_TOKEN }} our-registory.com  If direct pull not work will try manual login.
             instance_username=$(whoami)
