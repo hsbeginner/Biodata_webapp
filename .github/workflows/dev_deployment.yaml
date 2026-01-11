@@ -3,11 +3,10 @@ on:
   workflow_dispatch:
     inputs:
       deploy_application:
-        description: Select application to deploy 
-        required: true
+        description: Select application to deploy
         type: choice
         opstions:
-          Biodata_webapp
+          - Biodata_webapp
 
 run-name: Deploying ${{ inputs.deploy_application }} to Developemnt by @${{ github.actor }}
 
